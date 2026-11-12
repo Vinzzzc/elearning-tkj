@@ -200,7 +200,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
         <div class="menu">
             <a href="dashboard.php" class="active">Dashboard</a>
             <a href="kelola-materi.php">Kelola Materi</a>
-            <a href="#">Kategori Materi</a>
             <a href="kelola-user.php">Manajemen User</a>
         </div>
         <a href="../logout.php" class="logout">Logout</a>
