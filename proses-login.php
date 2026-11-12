@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
         // Arahkan berdasarkan role dengan pop-up SweetAlert2
         if ($user['role'] == 'admin') {
-            tampilkan_alert('Berhasil Login!', 'Selamat datang kembali, Admin ' . $user['nama_lengkap'], 'success', 'admin/dashboard.php');
+            tampilkan_alert('Login Berhasil!', 'Selamat datang kembali, Admin ' . $user['nama_lengkap'], 'success', 'admin/dashboard.php');
         } else {
-            tampilkan_alert('Berhasil Login!', 'Selamat datang, ' . $user['nama_lengkap'], 'success', 'pelajar/index.php');
+            tampilkan_alert('Login Berhasil!', 'Selamat datang, ' . $user['nama_lengkap'], 'success', 'pelajar/index.php');
         }
 
     } else {

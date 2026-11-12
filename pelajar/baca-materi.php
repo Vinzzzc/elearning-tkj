@@ -112,9 +112,9 @@ if (!$materi) {
 <body>
 
     <nav class="navbar">
-        <h2>TKJ E-Learning</h2>
+        <h2>E-Learning TKJ</h2>
         <div class="nav-right">
-            <a href="index.php" style="color: #6b7280; text-decoration: none; font-weight: 600;">Dashboard Siswa</a>
+            // <a href="index.php" style="color: #6b7280; text-decoration: none; font-weight: 600;">Dashboard Siswa</a>
         </div>
     </nav>
 

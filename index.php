@@ -78,7 +78,7 @@
                 <input type="password" name="password" class="form-control" placeholder="••••••••" required>
             </div>
 
-            <button type="submit" class="btn-primary">Masuk ke Dashboard</button>
+            <button type="submit" class="btn-primary">Login</button>
         </form>
 
         <div class="auth-footer">
