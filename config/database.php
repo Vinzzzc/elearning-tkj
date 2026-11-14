@@ -4,7 +4,7 @@
 $host = '127.0.0.1';
 $dbname = 'db-tekaje';
 $username = 'root'; 
-$password = ''; // Isi dengan password MariaDB kamu!
+$password = '123'; // Isi dengan password MariaDB kamu!
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
