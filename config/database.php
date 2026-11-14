@@ -1,10 +1,12 @@
 <?php
 // config/database.php
 
-$host = '127.0.0.1';
-$dbname = 'db-tekaje';
-$username = 'root'; 
-$password = ''; // Isi dengan password MariaDB kamu!
+$host = getenv('DB_HOST') ?: 'localhost';
+$username= getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS') ?: '';
+$dbname   = getenv('DB_NAME') ?: 'db_sekolah';
+
+$conn = mysqli_connect($host, $username, $password, $dbname);
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
