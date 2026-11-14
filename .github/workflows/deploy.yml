@@ -2,7 +2,7 @@ name: CI/CD Pipeline to AWS EC2
 
 on:
   push:
-    branches: [ "main" ] # Trigger aktif otomatis setiap ada push atau merge ke branch main
+    branches: [ "master" ] # Trigger aktif otomatis setiap ada push atau merge ke branch main
 
 jobs:
   build-and-deploy:
