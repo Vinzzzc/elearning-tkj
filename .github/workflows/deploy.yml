@@ -24,5 +24,18 @@ jobs:
       uses: docker/build-push-action@v7
       with:
         context: .
-        push: true
+        push: false
         tags: ${{ secrets.DOCKER_USERNAME }}/elearning-tkj:latest
+
+    - name: Remote SSH
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: 22
+        script:
+          cd /var/www/html
+          git status
+          git pull origin master
+          systemctl restart apache2
