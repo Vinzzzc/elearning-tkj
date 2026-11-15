@@ -196,7 +196,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
 
     <!-- SIDEBAR -->
     <div class="sidebar" id="sidebar">
-        <h2>TKJ ADMIN</h2>
+        <h2>TKJ ADMIN Dashboard</h2>
         <div class="menu">
             <a href="dashboard.php" class="active">Dashboard</a>
             <a href="kelola-user.php">Kelola User</a>
