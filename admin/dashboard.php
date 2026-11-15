@@ -199,7 +199,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
         <h2>TKJ ADMIN</h2>
         <div class="menu">
             <a href="dashboard.php" class="active">Dashboard</a>
-            <a href="kelola-user.php">Manajemen User</a>
+            <a href="kelola-user.php">Kelola User</a>
             <a href="kelola-materi.php">Kelola Materi</a>
         </div>
         <a href="../logout.php" class="logout">Logout</a>
