@@ -39,4 +39,4 @@ jobs:
           cd /var/www/html/elearning-tkj
           git status
           git pull origin master
-          systemctl restart apache2
+          sudo systemctl restart apache2
