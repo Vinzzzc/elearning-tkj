@@ -24,7 +24,7 @@ jobs:
       uses: docker/build-push-action@v7
       with:
         context: .
-        push: false
+        push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/elearning-tkj:latest
 
     - name: Remote SSH
