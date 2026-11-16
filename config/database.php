@@ -3,8 +3,8 @@
 
 $host = getenv('DB_HOST') ?: 'localhost';
 $username= getenv('DB_USER') ?: 'root';
-$password = getenv('DB_PASS') ?: '';
-$dbname   = getenv('DB_NAME') ?: 'db_sekolah';
+$password = getenv('DB_PASS') ?: '123';
+$dbname   = getenv('DB_NAME') ?: 'db-tekaje';
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
