@@ -62,7 +62,7 @@
 
     <div class="auth-card">
         <div class="auth-header">
-            <h2>Selamat Datang</h2>
+            <h2>Welcome to E-Learning</h2>
             <p>Masuk ke platform E-Learning TKJ</p>
         </div>
 
