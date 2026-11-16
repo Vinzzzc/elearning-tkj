@@ -27,6 +27,7 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/elearning-tkj:latest
 
+    # 4. SSH REMOTE
     - name: Remote SSH
       uses: appleboy/ssh-action@v1
       with:
@@ -34,7 +35,7 @@ jobs:
         username: ${{ secrets.AWS_EC2_USER }}
         key: ${{ secrets.AWS_SSH_PRIVATE_KEY }}
         port: 22
-        script:
+        script: |
           cd /var/www/html
           git status
           git pull origin master
