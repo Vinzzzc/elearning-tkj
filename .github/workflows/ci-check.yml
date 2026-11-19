@@ -1,4 +1,4 @@
-name: CI Check on Pull Request
+name: CI Check on Pull Request 
 
 # Hanya jalan saat ada Pull Request menuju branch master
 on:
